@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>FRC Stream</title>
+        
+        <meta charset="utf-8">
+        
+        <style>
+            
+            body {
+                background-color: black;
+                color: white;
+            }
+            
+            #twitchplayer {
+                float: left;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>FRC STREAM</h1>
+        
+        <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+        <div id="twitchplayer"></div>
+        <script type="text/javascript">
+            var options = {
+                width: 1000,
+                height: 600,
+                channel: "firstwa_red1",
+            };
+            var player = new Twitch.Player("twitchplayer", options);
+            player.setVolume(0.5);
+        </script>
+        
+        <iframe frameborder="0"
+                scrolling="no"
+                id="firstwa_red1"
+                src="https://www.twitch.tv/embed/firstwa_red1/chat"
+                height="600"
+                width="350">
+        </iframe>
+        
+    </body>
+    
+</html>
